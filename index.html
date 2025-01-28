@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Нутрициолог [Имя]</title>
+
+  <link rel="stylesheet" href="styles.css" type="text/css">
+  <script src="https://js.stripe.com/v3/"></script>
+</head>
+<body>
+  <!-- Главная страница -->
+  <header class="hero">
+    <div class="container">
+      <h1>Ваш персональный нутрициолог [Имя]</h1>
+      <p>Помогаю улучшить здоровье через правильное питание и индивидуальный подход</p>
+      <a href="#contact" class="btn">Записаться на консультацию</a>
+    </div>
+  </header>
+
+  <!-- Обо мне -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2>Обо мне</h2>
+      <div class="about-content">
+        <img src="nutriciolog.jpg" alt="Фото нутрициолога">
+        <p>Я сертифицированный нутрициолог с опытом работы более 5 лет. Помогаю своим клиентам найти баланс в питании, улучшить самочувствие и достичь своих целей.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Услуги -->
+  <section id="services" class="services">
+    <div class="container">
+      <h2>Мои услуги</h2>
+      <div class="service-list">
+        <div class="service-item">
+          <h3>Индивидуальные консультации</h3>
+          <p>Персональный подход к каждому клиенту.</p>
+          <button class="btn" onclick="openPaymentModal(1000)">Оплатить 10 руб</button>
+        </div>
+        <div class="service-item">
+          <h3>План питания</h3>
+          <p>Составление индивидуального рациона.</p>
+          <button class="btn" onclick="openPaymentModal(2000)">Оплатить 20 руб</button>
+        </div>
+        <div class="service-item">
+          <h3>Поддержка</h3>
+          <p>Сопровождение на пути к здоровому образу жизни.</p>
+          <button class="btn" onclick="openPaymentModal(3000)">Оплатить 30 руб</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Модальное окно оплаты -->
+  <div id="payment-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closePaymentModal()">&times;</span>
+      <h2>Оплата услуги</h2>
+      <form id="payment-form">
+        <div id="card-element">
+          <!-- Stripe Card Element будет здесь -->
+        </div>
+        <button id="submit-button" class="btn">Оплатить</button>
+        <div id="card-errors" role="alert"></div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Отзывы -->
+  <section id="testimonials" class="testimonials">
+    <div class="container">
+      <h2>Отзывы клиентов</h2>
+      <div class="testimonial-list">
+        <div class="testimonial-item">
+          <p>"Благодаря [Имя], я смогла изменить свои пищевые привычки и почувствовала себя лучше уже через месяц!"</p>
+          <span>- Анна, клиент</span>
+        </div>
+        <div class="testimonial-item">
+          <p>"Профессиональный подход и индивидуальный план питания помогли мне достичь своих целей."</p>
+          <span>- Иван, клиент</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Контакты -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Свяжитесь со мной</h2>
+      <form action="#" method="post">
+        <input type="text" name="name" placeholder="Ваше имя" required>
+        <input type="email" name="email" placeholder="Ваш email" required>
+        <textarea name="message" placeholder="Ваше сообщение" required></textarea>
+        <button type="submit" class="btn">Отправить</button>
+      </form>
+      <div class="contact-info">
+        <p>Телефон: +7 (XXX) XXX-XX-XX</p>
+        <p>Email: info@nutriciolog.ru</p>
+        <p>Адрес: г. Москва, ул. Здоровья, 1</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Футер -->
+  <footer>
+    <div class="container">
+      <p>© 2025 [Имя]. Все права защищены.</p>
+      <div class="social-links">
+        <a href="#">Instagram</a>
+        <a href="#">Telegram</a>
+        <a href="#">WhatsApp</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="C:\Users\popkov-sa\Downloads\Site\script.js"></script>
+</body>
+</html>
